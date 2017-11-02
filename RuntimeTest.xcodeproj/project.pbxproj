@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC15B23C1FAB45CE00C9DDA0 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B23B1FAB45CE00C9DDA0 /* Dog.m */; };
+		FC15B23F1FAB536900C9DDA0 /* Person+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B23E1FAB536900C9DDA0 /* Person+Play.m */; };
 		FC762D191FAB103C005DF15D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC762D181FAB103C005DF15D /* main.m */; };
+		FC762D211FAB105C005DF15D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FC762D201FAB105C005DF15D /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC15B23A1FAB45CE00C9DDA0 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		FC15B23B1FAB45CE00C9DDA0 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		FC15B23D1FAB536900C9DDA0 /* Person+Play.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Play.h"; sourceTree = "<group>"; };
+		FC15B23E1FAB536900C9DDA0 /* Person+Play.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Play.m"; sourceTree = "<group>"; };
 		FC762D151FAB103C005DF15D /* RuntimeTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RuntimeTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC762D181FAB103C005DF15D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC762D1F1FAB105C005DF15D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FC762D201FAB105C005DF15D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				FC762D181FAB103C005DF15D /* main.m */,
+				FC762D1F1FAB105C005DF15D /* Person.h */,
+				FC762D201FAB105C005DF15D /* Person.m */,
+				FC15B23A1FAB45CE00C9DDA0 /* Dog.h */,
+				FC15B23B1FAB45CE00C9DDA0 /* Dog.m */,
+				FC15B23D1FAB536900C9DDA0 /* Person+Play.h */,
+				FC15B23E1FAB536900C9DDA0 /* Person+Play.m */,
 			);
 			path = RuntimeTest;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC15B23F1FAB536900C9DDA0 /* Person+Play.m in Sources */,
+				FC15B23C1FAB45CE00C9DDA0 /* Dog.m in Sources */,
+				FC762D211FAB105C005DF15D /* Person.m in Sources */,
 				FC762D191FAB103C005DF15D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +252,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPSCYF576Y;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +262,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPSCYF576Y;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

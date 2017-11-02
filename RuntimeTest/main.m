@@ -1,4 +1,4 @@
-//
+ //
 //  main.m
 //  RuntimeTest
 //
@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/message.h>
+#import "Person.h"
+#import "Person+Play.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+//        id p = objc_msgSend(objc_msgSend(objc_getClass("Person"), sel_registerName("alloc")),sel_registerName("init"));
+//        objc_msgSend(p, sel_registerName("wahaha"));
+        
+        Person *newPerson = [Person new];
+        newPerson.gameName = @"王者荣耀";
+        NSLog(@"%@",newPerson.gameName);
+        
     }
     return 0;
 }
